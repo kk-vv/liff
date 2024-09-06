@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
           <li className="mb-2">
              Take the spear .
           </li>
-          <li>Let's fight.</li>
+          <li>Let&apos;s fight.</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -47,5 +47,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  );
+  )
 }
