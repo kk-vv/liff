@@ -1,8 +1,8 @@
 'use client'
 
-import { useEffect } from "react"
+// import { useEffect } from "react"
 
-const ErrorPage = ({error, reset}: {error: Error, reset: () => {}}) => {
+const ErrorPage = ({error, reset}: {error: Error, reset: () => void}) => {
     return (
         <div className="error">
         <h3>All error occured!</h3>

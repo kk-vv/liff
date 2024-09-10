@@ -23,5 +23,13 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
+  }  
 }
+
+/* .card {
+  @apply flex items-center overflow-hidden shadow-m h-32 lg:h-60 shadow-slate-400 bg-teal-800 text-white font-semibold space-x-2 rounded;
+} */
+
+/* .badge {
+  @apply bg-white shadow-inner shadow-amber-200 text-orange-400 text-xs uppercase font-bold rounded-full p-1 absolute top-0 right-0 mt-1 mr-1;
+} */
