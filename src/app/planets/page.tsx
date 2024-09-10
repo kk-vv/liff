@@ -6,8 +6,10 @@
 
 // import Box from "@/componets/boxstyle"
 import Card from "@/componets/card"
+import Card2 from "@/componets/card2"
+import { ImageUtils } from "@/utils/images"
 // import roboto from "@/utils/font"
-// import Image from "next/image"
+import Image from "next/image"
 
 const getPlanets = async (): Promise<PlanetsResponse> => {
     const res = await fetch("https://swapi.dev/api/planets", {
@@ -29,7 +31,16 @@ const PlanetsList = async() => {
     const planetsResponse: PlanetsResponse = await getPlanets()
     const planets = planetsResponse.results
     return planets.map((planet: Planet) => {
-        return <Card planet={planet} key={planet.name}></Card>
+        // return <Card2 planet={planet} key={planet.name}></Card2>
+        return <>
+        <div className="bg-teal-500">
+        <Image src={ImageUtils.hodler} alt={planet.name}></Image>
+        <div>
+            <span>{planet.name}</span>
+            <span className="text-sm block uppercase">{planet.climate} {planet.terrain}</span>
+        </div>
+        </div>
+        </>
     })
     
     // return (
