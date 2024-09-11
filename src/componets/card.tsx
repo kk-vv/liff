@@ -6,7 +6,7 @@ const Card = ({planet}: {
     planet: Planet
 }) => {
     return (
-        <div className="mx-4 mt-5 relative bg-slate-400">
+        <div className="mx-4 mt-5 relative">
         <div className="flex items-center overflow-hidden shadow-m h-32 lg:h-60 shadow-slate-400 bg-teal-800 text-white font-semibold space-x-2 rounded">
             <Image src={ImageUtils.hodler} alt={planet.name} width={100} className="h-full" style={{objectFit: "cover"}}></Image>
             <div>
