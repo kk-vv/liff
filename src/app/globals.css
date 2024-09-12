@@ -33,3 +33,11 @@ body {
 /* .badge {
   @apply bg-white shadow-inner shadow-amber-200 text-orange-400 text-xs uppercase font-bold rounded-full p-1 absolute top-0 right-0 mt-1 mr-1;
 } */
+
+.navMenu {
+  @apply flex px-2 text-sm font-mono hover:font-bold hover:text-orange-400 hover:border-r-4 hover:border-r-orange-400 transition ease-linear duration-500
+}
+
+.signButton {
+  @apply text-orange-400 font-thin text-sm first-letter:uppercase px-2 m-2 border border-orange-400  cursor-pointer bg-slate-200 hover:bg-orange-400 hover:shadow-lg hover:text-white rounded-full transform hover:scale-125
+}
